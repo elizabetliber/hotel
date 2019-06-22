@@ -11,3 +11,22 @@
     background-color: darkred;
 
 }
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 640px;
+}
+
+.element {
+    text-align: left;
+    width: 300px;
+    height: 100px;
+    background-color: rosybrown;
+    margin: 10px;
+}

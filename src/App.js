@@ -5,19 +5,31 @@ function App() {
     return (
         <div className="App">
 
-            <header className="header">
+            <div className="header">
                 <h1>Guests house coral</h1>
-            </header>
-
-            <div>
-                <div>
-                    <p>Уютный семейный номер</p>
-                </div>
             </div>
 
-            <footer className="footer">
+            <div className="container">
+                <div className="wrapper">
+                    <div className="element">
+                        <h4>Уютный семейный номер</h4>
+                    </div>
+                    <div className="element">
+                        <h4>Уютный семейный номер</h4>
+                    </div>
+                    <div className="element">
+                        <h4>Уютный семейный номер</h4>
+                    </div>
+                    <div className="element">
+                        <h4>Уютный семейный номер</h4>
+                    </div>
+                </div>
+            </div>
+            <div className="footer">
                 <h3>Guests house coral</h3>
-            </footer>
+                <p>г.Анапа, Коралловый проезд, д.19</p>
+                <p>+ 7(996)376-19-78</p>
+            </div>
 
         </div>
     );
