@@ -30,15 +30,17 @@
     padding: 4px;
     text-align: center;
     background-color: darkslategray;
-    height: 160px;
+    height: 150px;
     color:white;
+    line-height:0.49;
+
 }
 .container {
     display: flex;
     justify-content: center;
 }
 .wrapper {
-    margin-top:20px;
+    margin-top:10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -48,11 +50,14 @@
     text-align: center;
     width: 280px;
     height: 140px;
-    margin: 15px;
+    margin: 2px;
     background:rosybrown;
     background-image:url("http://remontik.org/wp-content/uploads/2016/09/11-2-1.jpg") ;
     background-size:cover;
-    border-radius: 20px;
+    border-radius: 14px;
+    psdding:19px;
+    border:6px lavenderblush solid;
+    /*padding:5px; !* this **/
 }
 .byeschool {
     width: 640px;
@@ -64,7 +69,8 @@
 }
 .rambo {
     width: 640px;
-    height: 400px;
+    height: 486px;
+    background:lavenderblush;
 }
 h1{
     text-decoration: underline;
@@ -80,6 +86,24 @@ h4{
 }
 .you{
     text-align: left;
-    font-size: 14px;
-    padding-top:40px;
+    font-size: 13px;
+    padding-top:138px;
+    line-height:0.17;
+}
+.oy{
+    margin-top: 81px;
+}
+.iu{
+    margin-top: 81px;
+}
+.it{
+    padding-top: 8px;
+    height: 20px;
+    background:  forestgreen; /* Цвет фона */
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.guy{
+    color: dimgray;
 }
