@@ -1,32 +1,84 @@
-.header {
+@import url('https://fonts.googleapis.com/css?family=Anton|Bungee+Inline|Saira+Stencil+One&display=swap');
+
+.mainImageContainer {
+    position: relative;
+    height: 400px;
+    width: 640px;
+}
+
+.mainImage {
+    filter: brightness(70%) saturate(200%);
+    height: 100%;
+    width: 100%;
+}
+
+.titleContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     display: flex;
-    height: 300px;
     justify-content: center;
-    background-color: red;
-    align-items:center;
-    color: white;
+    align-items: center;
+}
+.title {
+    margin: 0;
 }
 .footer {
+    padding: 4px;
     text-align: center;
-    background-color: darkred;
-
+    background-color: darkslategray;
+    height: 160px;
+    color:white;
 }
 .container {
     display: flex;
     justify-content: center;
 }
-
 .wrapper {
+    margin-top:20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 640px;
 }
-
 .element {
+    text-align: center;
+    width: 280px;
+    height: 140px;
+    margin: 15px;
+    background:rosybrown;
+    background-image:url("http://remontik.org/wp-content/uploads/2016/09/11-2-1.jpg") ;
+    background-size:cover;
+    border-radius: 20px;
+}
+.byeschool {
+    width: 640px;
+    flex-wrap: wrap;
+}
+.box{
+    width: 640px;
+    height: 220px;
+}
+.rambo {
+    width: 640px;
+    height: 400px;
+}
+h1{
+    text-decoration: underline;
+    color:white;
+    font-size: 59px;
+}
+h1{
+    font-family: 'Saira Stencil One', cursive;
+}
+h4{
+    font-size: 15px;
+}
+.you{
     text-align: left;
-    width: 300px;
-    height: 100px;
-    background-color: rosybrown;
-    margin: 10px;
+    font-size: 14px;
+    padding-top:40px;
 }
