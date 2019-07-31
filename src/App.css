@@ -65,7 +65,7 @@
 }
 .box{
     width: 640px;
-    height: 220px;
+    height:70px;
 }
 .rambo {
     width: 640px;
@@ -96,9 +96,9 @@ h4{
 .iu{
     margin-top: 81px;
 }
-.it{
-    padding-top: 8px;
-    height: 20px;
+input{
+    padding-top: 4px;
+    height: 30px;
     background:  forestgreen; /* Цвет фона */
     width: 140px;
     margin-left: auto;
@@ -106,4 +106,7 @@ h4{
 }
 .guy{
     color: dimgray;
+}
+.io{
+    width: 640px;
 }

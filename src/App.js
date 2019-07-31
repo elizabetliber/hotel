@@ -16,46 +16,57 @@ function App() {
                     <div className="wrapper">
                         <div className="element">
                             <div className="you">
-                                <p>номер целиком    <strong>1 кровать</strong></p>
-                            <h4>Уютный семейный номер</h4>
-                                <p>1133ք</p>
-                                <p>2 отзыва</p>
+                                <p className="guy">номер целиком    <strong>1 кровать</strong></p>
+                            <h4 className="guy">Уютный семейный номер</h4>
+                                <p className="guy">1133ք за ночь</p>
+                                <p className="guy">2 отзыва</p>
                             </div>
                         </div>
                         <div className="element">
 
                             <div className="you">
-                                <p>номер целиком    <strong>1 кровать</strong></p>
-                                <h4>Уютный семейный номер</h4>
-                                <p>1133ք</p>
-                                <p>2 отзыва</p>
+                                <p className="guy">номер целиком    <strong>1 кровать</strong></p>
+                                <h4 className="guy"  >Уютный семейный номер</h4>
+                                <p className="guy">1133ք за ночь</p>
+                                <p className="guy">2 отзыва</p>
                             </div>
                         </div>
-                        <div className="element">
-                            <div className="you">
-                                <p>номер целиком    <strong>1 кровать</strong></p>
-                                <h4>Уютный семейный номер</h4>
-                                <p>1133ք</p>
-                                <p>2 отзыва</p>
+                        <div className="oy">
+                            <div className="element">
+
+                                <div className="you">
+                                <p  className="guy">номер целиком    <strong>1 кровать</strong></p>
+                                <h4  className="guy">Уютный семейный номер</h4>
+                                <p  className="guy">1133ք за ночь</p>
+                                <p  className="guy">2 отзыва</p>
+                            </div>
                             </div>
                         </div>
-                        <div className="element">
+                        <div className="iu">
+                            <div className="element">
                             <div className="you">
-                                <p>номер целиком    <strong>1 кровать</strong></p>
-                                <h4>Уютный семейный номер</h4>
-                                <p>1133ք</p>
-                                <p>2 отзыва</p>
+                                <p className="guy">номер целиком    <strong>1 кровать</strong></p>
+                                <h4 className="guy">Уютный семейный номер</h4>
+                                <p className="guy">1133ք за ночь</p>
+                                <p className="guy">2 отзыва</p>
 
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="box">
+            <div className="io">
                 <div className="footer">
                     <h3>GUEST HOUSE CORAL</h3>
                     <p>г.Анапа, Коралловый проезд, д.19</p>
-                    <p>+ 7(996)376-19-78</p>
+                    <p>+ 7(996)376-19-78</p><br/>
+                       <a href="https://goo.gl/maps/3oANPpeMFu8qa7ja9" target="_blank">
+                           <input type="submit" value="КАРТА"/></a>
+                    <div className="box">
+
+                    </div>
+
                 </div>
             </div>
         </div>
