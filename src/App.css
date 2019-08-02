@@ -35,10 +35,8 @@
     line-height:0.49;
 
 }
-.container {
-    display: flex;
-    justify-content: center;
-}
+
+p
 .wrapper {
     margin-top:10px;
     display: flex;
