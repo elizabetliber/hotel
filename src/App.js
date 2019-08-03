@@ -4,17 +4,21 @@ import "./App.css";
 
 function Card() {
   return (
-    <div className="card">
-      <img src="http://remontik.org/wp-content/uploads/2016/09/11-2-1.jpg" className="card-img-top" alt="..." />
+    <div className="card_">
+      <img
+        src="http://remontik.org/wp-content/uploads/2016/09/11-2-1.jpg"
+        className="card-img-top"
+        alt="..."
+      />
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
         <p className="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          <p>Номер целиком ·1 номер</p>
+          <h4>Уютный семейный номер</h4>
+          <p>1133₽ за ночь</p>
+          <p>
+            <strong> 2 отзыва</strong>
+          </p>
         </p>
-        <a href="#" className="btn btn-primary">
-          Go somewhere
-        </a>
       </div>
     </div>
   );
@@ -36,27 +40,33 @@ function App() {
           </div>
         </div>
       </div>
-
+      <br />
       <div className="row">
         <div className="col">
-          <Card />
+          <Card /> {/*БЛОКИ*/}
           <Card />
         </div>
         <div className="col">
-          <Card />
+          <Card /> {/*БЛОКИ*/}
           <Card />
         </div>
       </div>
-      <div className="io">
-        <div className="footer">
-          <h3>GUEST HOUSE CORAL</h3>
-          <p>г.Анапа, Коралловый проезд, д.19</p>
-          <p>+ 7(996)376-19-78</p>
-          <br />
-          <a href="https://goo.gl/maps/3oANPpeMFu8qa7ja9" target="_blank">
-            <input type="submit" value="КАРТА" />
-          </a>
-          <div className="box"></div>
+      <div className="row">
+        <div className="col">
+          <div className="card">
+            <div className="card_body">
+              <h5 className="card-title">
+                <h3>GUEST HOUSE CORAL</h3>
+              </h5>
+              <p>г.Анапа, Коралловый проезд, д.19</p>
+              <p>+ 7(996)376-19-78</p>
+              <a href="https://goo.gl/maps/3oANPpeMFu8qa7ja9" target="_blank">
+                <button type="button" className="btn btn-outline-success">
+                  КАРТА
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
