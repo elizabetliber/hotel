@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Icons from "./components/Icons"
 
 function Card() {
   return (
@@ -43,29 +44,30 @@ function App() {
       <br />
       <div className="row">
         <div className="col">
-          <Card /> {/*БЛОКИ*/}
+          <Card />
           <Card />
         </div>
         <div className="col">
-          <Card /> {/*БЛОКИ*/}
+          <Card />
           <Card />
         </div>
       </div>
       <div className="row">
         <div className="col">
           <div className="card">
-            <div className="card_body">
-              <h5 className="card-title">
-                <h3>GUEST HOUSE CORAL</h3>
-              </h5>
-              <p>г.Анапа, Коралловый проезд, д.19</p>
-              <p>+ 7(996)376-19-78</p>
+            <div className="card_body bg-dark">
+              <h3 className="card-title text-white mt-3">
+                GUEST HOUSE CORAL
+              </h3>
+              <p className="text-white">г.Анапа, Коралловый проезд, д.19</p>
+              <p className="text-white">+ 7(996)376-19-78</p>
               <a href="https://goo.gl/maps/3oANPpeMFu8qa7ja9" target="_blank">
-                <button type="button" className="btn btn-outline-success">
+                <button type="button" className="btn btn-outline-success mb-3">
                   КАРТА
                 </button>
               </a>
             </div>
+            <Icons />
           </div>
         </div>
       </div>
