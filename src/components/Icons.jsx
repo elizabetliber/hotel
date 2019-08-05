@@ -9,21 +9,21 @@ import {
 function Icons() {
   return (
     <div className="text-center">
-      <a href="https://google.com" target="_blank" className="mr-2">
+      <a href="https://vk.com/away.php?to=https%3A%2F%2Fwww.instagram.com%2Fvitalyliber%2F&cc_key=" target="_blank" className="mr-2">
         <FontAwesomeIcon
           color="black"
           size="lg"
           icon={faInstagram}
         />
       </a>
-      <a href="https://google.com" target="_blank" className="mr-2">
+      <a href="https://vk.com/vitaly.liber" target="_blank" className="mr-2">
         <FontAwesomeIcon
           color="black"
           size="lg"
           icon={faVk}
         />
       </a>
-      <a href="https://google.com" target="_blank">
+      <a href="https://www.youtube.com/channel/UCYYZYhaXedvg9U6bjMISaEA" target="_blank">
         <FontAwesomeIcon
           color="black"
           size="lg"

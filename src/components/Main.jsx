@@ -1,6 +1,6 @@
 import React from "react";
-import Icons from "./Icons"
-import Card from "./Card"
+import Icons from "./Icons";
+import Card from "./Card";
 
 function Main() {
   return (
@@ -33,9 +33,7 @@ function Main() {
         <div className="col">
           <div className="card">
             <div className="card_body bg-dark">
-              <h3 className="card-title text-white mt-3">
-                GUEST HOUSE CORAL
-              </h3>
+              <h3 className="card-title text-white mt-3">GUEST HOUSE CORAL</h3>
               <p className="text-white">г.Анапа, Коралловый проезд, д.19</p>
               <p className="text-white">+ 7(996)376-19-78</p>
               <a href="https://goo.gl/maps/3oANPpeMFu8qa7ja9" target="_blank">
