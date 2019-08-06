@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 function Room() {
   return (
@@ -24,7 +25,7 @@ function Room() {
               </a>
               <br />
 
-              <div className="text-justify">
+              <Info>
                 {" "}
                 <h2>Уютный семейный номер</h2>
                 <strong>номер целиком</strong>
@@ -65,7 +66,7 @@ function Room() {
                 <button type="button" className="btn btn-danger ">
                   Забронировать
                 </button>
-              </div>
+              </Info>
             </div>
           </div>
         </div>
@@ -75,3 +76,10 @@ function Room() {
 }
 
 export default Room;
+
+const Info = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  width: 430px;
+  text-align: left;
+`;
