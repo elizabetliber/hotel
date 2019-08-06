@@ -9,16 +9,16 @@ function Room() {
             <div className="card-body">
               <h3 className="card-title text-center ">GUEST HOUSE CORAL</h3>
             </div>
-            <div className="mainImageContainer">
+            <div className="mainImageContainer text-center">
               <img
-                className="mainImage"
+                className="mainImage "
                 src="https://www.hotel-oreanda.com/assets/photo/rooms/klassicheskiy-odnomestnyy/hotel-oreanda-yalta-classic-single-02.jpg"
               />
               <a
                 href="https://www.hotel-oreanda.com/assets/photo/rooms/klassicheskiy-odnomestnyy/hotel-oreanda-yalta-classic-single-02.jpg"
                 target="_blank"
               >
-                <button type="button" className="btn btn-light">
+                <button type="button" className="btn btn-light ">
                   ПОСМОТРЕТЬ ФОТО
                 </button>
               </a>
@@ -61,8 +61,8 @@ function Room() {
                 </ul>
                 <br />
                 <hr />
-                <strong className="mr-10">1000Р</strong> за сутки
-                <button type="button " className="btn btn-danger">
+                <strong>1000Р</strong> за сутки
+                <button type="button" className="btn btn-danger ">
                   Забронировать
                 </button>
               </div>
