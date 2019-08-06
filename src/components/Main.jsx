@@ -1,6 +1,7 @@
 import React from "react";
 import Icons from "./Icons";
 import Card from "./Card";
+import rooms from "../resources/rooms";
 
 function Main() {
   return (
@@ -24,10 +25,7 @@ function Main() {
           <Card />
           <Card />
         </div>
-        <div className="col">
-          <Card />
-          <Card />
-        </div>
+
       </div>
       <div className="row">
         <div className="col">
