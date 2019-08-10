@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Card(props) {
-  const { room: { beds, price } } = props;
+  const { room: { beds, price, id } } = props;
   return (
     <div className="card_">
-      <Link to="/rooms/1">
+      <Link to={`/rooms/${id}`}>
         <img
           src="http://remontik.org/wp-content/uploads/2016/09/11-2-1.jpg"
           className="card-img-top"

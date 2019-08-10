@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route exact path="/rooms/1" component={Room} />
+        <Route exact path="/rooms/:id" component={Room} />
       </Switch>
     </Router>
   );

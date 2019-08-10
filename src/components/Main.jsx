@@ -13,7 +13,6 @@ function Main() {
       </div>
     );
   }
-  console.log(items);
   return (
     <div className="container">
       <div className="row">
