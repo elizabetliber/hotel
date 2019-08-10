@@ -4,6 +4,16 @@ import Card from "./Card";
 import rooms from "../resources/rooms";
 
 function Main() {
+  const items = [];
+  for (let i = 0; i < rooms.length; i += 2) {
+    items.push(
+      <div key={i} className="col">
+        <Card room={rooms[i]} />
+        <Card room={rooms[i + 1]} />
+      </div>
+    );
+  }
+  console.log(items);
   return (
     <div className="container">
       <div className="row">
@@ -20,13 +30,7 @@ function Main() {
         </div>
       </div>
       <br />
-      <div className="row">
-        <div className="col">
-          <Card />
-          <Card />
-        </div>
-
-      </div>
+      <div className="row">{items}</div>
       <div className="row">
         <div className="col">
           <div className="card">

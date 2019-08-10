@@ -1,18 +1,20 @@
-const Rooms = [
+const rooms = [
   {
-    rooms: 1,
+    beds: 1,
     price: "900"
   },
   {
-    rooms: 2,
+    beds: 2,
     price: "1200"
   },
   {
-    rooms: 1,
+    beds: 1,
     price: "1300"
   },
   {
-    rooms: 1,
+    beds: 1,
     price: "1500"
   },
 ];
+
+export default rooms;

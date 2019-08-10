@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Card() {
+function Card(props) {
+  const { room: { beds, price } } = props;
   return (
     <div className="card_">
       <Link to="/rooms/1">
@@ -12,9 +13,9 @@ function Card() {
         />
         <div className="card-body">
           <p className="card-text">
-            <p>Номер целиком ·1 номер</p>
+            <p>Номер целиком · кровать {beds}</p>
             <h4>Уютный семейный номер</h4>
-            <p>1133₽ за ночь</p>
+            <p>{price} руб. за ночь</p>
             <p>
               <strong> 2 отзыва</strong>
             </p>
