@@ -22,9 +22,7 @@ function Room(params) {
               <h3 className="card-title text-center ">GUEST HOUSE CORAL</h3>
             </div>
             <MainImageContainer className="mainImageContainer text-center">
-              <MainImage
-                src="https://www.hotel-oreanda.com/assets/photo/rooms/klassicheskiy-odnomestnyy/hotel-oreanda-yalta-classic-single-02.jpg"
-              />
+              <MainImage src="https://www.hotel-oreanda.com/assets/photo/rooms/klassicheskiy-odnomestnyy/hotel-oreanda-yalta-classic-single-02.jpg" />
               <HeaderButton
                 href="https://www.hotel-oreanda.com/assets/photo/rooms/klassicheskiy-odnomestnyy/hotel-oreanda-yalta-classic-single-02.jpg"
                 target="_blank"
@@ -71,10 +69,15 @@ function Room(params) {
                 </ul>
                 <br />
                 <hr />
-                <strong>{price} руб.</strong> за сутки
-                <button type="button" className="btn btn-danger ">
-                  Забронировать
-                </button>
+
+                <div className="d-flex justify-content-between">
+                  <em className="mt-2">
+                    <strong>{price} руб.</strong> за сутки
+                  </em>
+                  <button type="button" className="btn btn-danger">
+                    Забронировать
+                  </button>
+                </div>
               </Info>
             </MainImageContainer>
           </Card>
@@ -101,17 +104,17 @@ const MainImage = styled.img`
 
 const HeaderButton = styled.a`
   position: absolute;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 245px;
   width: 300px;
 `;
 const MainImageContainer = styled.div`
- position: relative;
+  position: relative;
   height: 300px;
 `;
 const Card = styled.div`
- height: 170px;
+  height: 170px;
 `;
