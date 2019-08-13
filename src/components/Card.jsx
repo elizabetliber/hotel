@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Card(props) {
-  const { room: { beds, price, id } } = props;
+  const { room: { beds, price, id, reviews } } = props;
   return (
     <div className="card_">
       <Link to={`/rooms/${id}`}>
@@ -17,7 +17,7 @@ function Card(props) {
             <h4>Уютный семейный номер</h4>
             <p>{price} руб. за ночь</p>
             <p>
-              <strong> 2 отзыва</strong>
+              <strong>{reviews} отзыва</strong>
             </p>
           </p>
         </div>

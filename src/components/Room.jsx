@@ -22,18 +22,17 @@ function Room(params) {
               <h3 className="card-title text-center ">GUEST HOUSE CORAL</h3>
             </div>
             <div className="mainImageContainer text-center">
-              <img
-                className="mainImage "
+              <MainImage
                 src="https://www.hotel-oreanda.com/assets/photo/rooms/klassicheskiy-odnomestnyy/hotel-oreanda-yalta-classic-single-02.jpg"
               />
-              <a
+              <HeaderButton
                 href="https://www.hotel-oreanda.com/assets/photo/rooms/klassicheskiy-odnomestnyy/hotel-oreanda-yalta-classic-single-02.jpg"
                 target="_blank"
               >
                 <button type="button" className="btn btn-light ">
                   ПОСМОТРЕТЬ ФОТО
                 </button>
-              </a>
+              </HeaderButton>
               <br />
 
               <Info>
@@ -92,4 +91,20 @@ const Info = styled.div`
   margin-right: auto;
   width: 430px;
   text-align: left;
+`;
+
+const MainImage = styled.img`
+  filter: brightness(70%) saturate(200%);
+  height: 100%;
+  width: 100%;
+`;
+
+const HeaderButton = styled.a`
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: 250px;
+  width: 300px;
 `;
