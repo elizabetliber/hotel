@@ -17,11 +17,11 @@ function Room(params) {
     <div className="container">
       <div className="row">
         <div className="col">
-          <div className="card ">
+          <Card>
             <div className="card-body">
               <h3 className="card-title text-center ">GUEST HOUSE CORAL</h3>
             </div>
-            <div className="mainImageContainer text-center">
+            <MainImageContainer className="mainImageContainer text-center">
               <MainImage
                 src="https://www.hotel-oreanda.com/assets/photo/rooms/klassicheskiy-odnomestnyy/hotel-oreanda-yalta-classic-single-02.jpg"
               />
@@ -76,8 +76,8 @@ function Room(params) {
                   Забронировать
                 </button>
               </Info>
-            </div>
-          </div>
+            </MainImageContainer>
+          </Card>
         </div>
       </div>
     </div>
@@ -105,6 +105,13 @@ const HeaderButton = styled.a`
   right: 0; 
   margin-left: auto; 
   margin-right: auto; 
-  margin-top: 250px;
+  margin-top: 245px;
   width: 300px;
+`;
+const MainImageContainer = styled.div`
+ position: relative;
+  height: 300px;
+`;
+const Card = styled.div`
+ height: 170px;
 `;

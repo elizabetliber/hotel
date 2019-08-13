@@ -1,52 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Bungee+Inline|Saira+Stencil+One&display=swap');
 
-.mainImageContainer {
-  position: relative;
-  height: 300px;
-}
 
-.mainImage {
-  filter: brightness(70%) saturate(200%);
-  height: 100%;
-  width: 100%;
-}
 
-.titleContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.title {
-  margin: 0;
-}
-h1 {
-  text-decoration: underline;
-  color: white;
-  font-size: 59px;
-}
 
-h1 {
-  font-family: "Saira Stencil One", cursive;
-}
-h4 {
-  font-size: 19px;
-}
-
-.card_body {
-  text-align: center;
-}
-.card {
-  height: 170px;
-}
-.card-text {
-  text-align: left;
-  font-size: 18px;
-  line-height: 0.5;
-}
 
