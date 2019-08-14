@@ -97,7 +97,7 @@ const Info = styled.div`
 `;
 
 const MainImage = styled.img`
-  filter: brightness(70%) saturate(200%);
+ //filter: brightness(70%) saturate(200%);
   height: 100%;
   width: 100%;
 `;
