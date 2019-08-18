@@ -4,7 +4,7 @@ const rooms = [
     id: "1",
     beds: 1,
     price: "900",
-    images: [require("../images/2f_1r.jpg"), require("../images/2f_1r.jpg")]
+    images: [require("../images/2f_1r.jpg"), require("../images/2f_1br.jpg")]
   },
   {
     reviews: 4,

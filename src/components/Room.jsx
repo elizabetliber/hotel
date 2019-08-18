@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
+import Lightbox from "react-image-lightbox";
 
 import rooms from "../resources/rooms";
 
 function Room(params) {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+
   const {
     match: {
       params: { id }
     }
   } = params;
   const room = rooms.find(el => el.id === id);
-  const { beds, price } = room;
+  const { beds, price, images } = room;
 
   return (
     <div className="container">
@@ -19,19 +23,42 @@ function Room(params) {
         <div className="col">
           <Card>
             <div className="card-body">
-              <h3 className="card-title text-center ">GUEST HOUSE CORAL</h3>
+              <Link className="nav-link" to="/">
+                <h3 className="card-title text-center text-dark">GUEST HOUSE CORAL</h3>
+              </Link>
+
             </div>
             <MainImageContainer className="mainImageContainer text-center">
-              <MainImage src="https://www.hotel-oreanda.com/assets/photo/rooms/klassicheskiy-odnomestnyy/hotel-oreanda-yalta-classic-single-02.jpg" />
+              <MainImage src={images[0]} />
               <HeaderButton
-                href="https://www.hotel-oreanda.com/assets/photo/rooms/klassicheskiy-odnomestnyy/hotel-oreanda-yalta-classic-single-02.jpg"
-                target="_blank"
+                onClick={e => {
+                  e.preventDefault();
+                  setLightboxOpen(!lightboxOpen);
+                }}
               >
                 <button type="button" className="btn btn-light ">
                   ПОСМОТРЕТЬ ФОТО
                 </button>
               </HeaderButton>
               <br />
+              {lightboxOpen && (
+                <Lightbox
+                  mainSrc={images[photoIndex]}
+                  nextSrc={images[(photoIndex + 1) % images.length]}
+                  prevSrc={
+                    images[(photoIndex + images.length - 1) % images.length]
+                  }
+                  onCloseRequest={() => setLightboxOpen(!lightboxOpen)}
+                  onMovePrevRequest={() =>
+                    setPhotoIndex(
+                      (photoIndex + images.length - 1) % images.length
+                    )
+                  }
+                  onMoveNextRequest={() =>
+                    setPhotoIndex((photoIndex + 1) % images.length)
+                  }
+                />
+              )}
 
               <Info>
                 <h2>Уютный семейный номер</h2>
@@ -97,7 +124,7 @@ const Info = styled.div`
 `;
 
 const MainImage = styled.img`
- //filter: brightness(70%) saturate(200%);
+  //filter: brightness(70%) saturate(200%);
   height: 100%;
   width: 100%;
 `;
