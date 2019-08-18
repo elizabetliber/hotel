@@ -6,7 +6,7 @@ function Card(props) {
   const { room: { beds, price, id, reviews, images } } = props;
   return (
     <div className="card_">
-      <Link to={`/rooms/${id}`}>
+      <Link className="nav-link text-dark"to={`/rooms/${id}`}>
         <img
           src={images[0]}
           className="card-img-top"
