@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function Card(props) {
-  const { room: { beds, price, id, reviews } } = props;
+  const { room: { beds, price, id, reviews, images } } = props;
   return (
     <div className="card_">
       <Link to={`/rooms/${id}`}>
         <img
-          src="http://remontik.org/wp-content/uploads/2016/09/11-2-1.jpg"
+          src={images[0]}
           className="card-img-top"
           alt="..."
         />
