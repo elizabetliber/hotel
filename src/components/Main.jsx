@@ -4,6 +4,7 @@ import Card from "./Card";
 import rooms from "../resources/rooms";
 import styled from "styled-components";
 
+
 function Main() {
   const items = [];
   for (let i = 0; i < rooms.length; i += 2) {
@@ -23,7 +24,8 @@ function Main() {
               src="https://rosting.by/upload/iblock/b8d/109518088.jpg"
             />
             <TitleContainer>
-              <Title className="title m-0">Guests house coral</Title>
+
+  <Title className="title m-0">Guests house coral</Title>
             </TitleContainer>
           </MainImageContainer>
           </div>
